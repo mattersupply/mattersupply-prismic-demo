@@ -1,0 +1,45 @@
+{
+  "id": "first_demo_module",
+  "label": "First Demo Module",
+  "repeatable": false,
+  "status": true,
+  "json": {
+    "Main": {
+      "top_image": {
+        "type": "Image",
+        "config": {
+          "label": "Top Image",
+          "constraint": {},
+          "thumbnails": []
+        }
+      },
+      "demo_title": {
+        "type": "Text",
+        "config": {
+          "label": "Demo Title",
+          "placeholder": ""
+        }
+      },
+      "demo_description": {
+        "type": "StructuredText",
+        "config": {
+          "label": "Demo Description",
+          "placeholder": "",
+          "allowTargetBlank": true,
+          "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+        }
+      },
+      "slices": {
+        "type": "Slices",
+        "fieldset": "Slice Zone",
+        "config": {
+          "choices": {
+            "grid_images": {
+              "type": "SharedSlice"
+            }
+          }
+        }
+      }
+    }
+  }
+}

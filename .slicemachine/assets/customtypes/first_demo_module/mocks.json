@@ -1,0 +1,107 @@
+{
+  "top_image": {
+    "__TYPE__": "ImageContent",
+    "origin": {
+      "id": "main",
+      "url": "https://images.unsplash.com/photo-1571126770897-2d612d1f7b89",
+      "width": 3456,
+      "height": 3456
+    },
+    "url": "https://images.unsplash.com/photo-1571126770897-2d612d1f7b89",
+    "width": 3456,
+    "height": 3456,
+    "edit": {
+      "zoom": 1,
+      "crop": {
+        "x": 0,
+        "y": 0
+      },
+      "background": "transparent"
+    },
+    "thumbnails": {}
+  },
+  "demo_title": {
+    "__TYPE__": "FieldContent",
+    "value": "share",
+    "type": "Text"
+  },
+  "demo_description": {
+    "__TYPE__": "StructuredTextContent",
+    "value": [
+      {
+        "type": "paragraph",
+        "content": {
+          "text": "Veniam laboris sit minim sint nisi incididunt sint elit cupidatat excepteur anim ut adipisicing magna. Et voluptate ullamco in sunt voluptate tempor incididunt laborum laboris."
+        }
+      }
+    ]
+  },
+  "slices": {
+    "__TYPE__": "SliceContentType",
+    "value": [
+      {
+        "key": "grid_images$dcc4683c-6a6b-454c-b99c-a50a3f5581c6",
+        "name": "grid_images",
+        "widget": {
+          "__TYPE__": "SharedSliceContent",
+          "variation": "default",
+          "primary": {
+            "title": {
+              "__TYPE__": "StructuredTextContent",
+              "value": [
+                {
+                  "type": "heading1",
+                  "content": {
+                    "text": "Street"
+                  }
+                }
+              ]
+            },
+            "description": {
+              "__TYPE__": "StructuredTextContent",
+              "value": [
+                {
+                  "type": "paragraph",
+                  "content": {
+                    "text": "Incididunt ipsum incididunt enim ea incididunt sint anim pariatur officia sunt voluptate. Commodo duis proident eu veniam Lorem. Aliqua aute laborum ipsum velit commodo aliquip deserunt consectetur nostrud."
+                  }
+                }
+              ]
+            }
+          },
+          "items": [
+            {
+              "__TYPE__": "GroupItemContent",
+              "value": [
+                [
+                  "image",
+                  {
+                    "__TYPE__": "ImageContent",
+                    "origin": {
+                      "id": "main",
+                      "url": "https://images.unsplash.com/photo-1587613865763-4b8b0d19e8ab",
+                      "width": 12288,
+                      "height": 16384
+                    },
+                    "url": "https://images.unsplash.com/photo-1587613865763-4b8b0d19e8ab",
+                    "width": 12288,
+                    "height": 16384,
+                    "edit": {
+                      "zoom": 1,
+                      "crop": {
+                        "x": 0,
+                        "y": 0
+                      },
+                      "background": "transparent"
+                    },
+                    "thumbnails": {}
+                  }
+                ]
+              ]
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

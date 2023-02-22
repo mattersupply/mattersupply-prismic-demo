@@ -1,0 +1,129 @@
+[
+  {
+    "__TYPE__": "SharedSliceContent",
+    "variation": "default",
+    "primary": {
+      "title": {
+        "__TYPE__": "StructuredTextContent",
+        "value": [
+          {
+            "type": "heading1",
+            "content": {
+              "text": "Demo Slice from Fonne",
+              "spans": []
+            },
+            "direction": "ltr"
+          }
+        ]
+      },
+      "description": {
+        "__TYPE__": "StructuredTextContent",
+        "value": [
+          {
+            "type": "paragraph",
+            "content": {
+              "text": "This is a grid where we'll see 3 images per row, in a mid resolution just 2 images per row, and in mobile, we'll see just one image per row. The alignment will be centered all the time.",
+              "spans": []
+            },
+            "direction": "ltr"
+          }
+        ]
+      }
+    },
+    "items": [
+      {
+        "__TYPE__": "GroupItemContent",
+        "value": [
+          [
+            "image",
+            {
+              "origin": {
+                "id": "main",
+                "url": "https://images.unsplash.com/photo-1493119508027-2b584f234d6c",
+                "width": 3424,
+                "height": 3424
+              },
+              "url": "https://images.unsplash.com/photo-1493119508027-2b584f234d6c",
+              "width": 3424,
+              "height": 3424,
+              "edit": {
+                "zoom": 1,
+                "crop": {
+                  "x": 0,
+                  "y": 0
+                },
+                "background": "transparent"
+              },
+              "credits": null,
+              "alt": "First Image",
+              "__TYPE__": "ImageContent",
+              "thumbnails": {}
+            }
+          ]
+        ]
+      },
+      {
+        "__TYPE__": "GroupItemContent",
+        "value": [
+          [
+            "image",
+            {
+              "url": "https://images.unsplash.com/photo-1557800636-894a64c1696f?crop=entropy&cs=tinysrgb&fm=jpg&ixid=MnwzMzc0NjN8MHwxfHNlYXJjaHw1fHxmcnVpdHxlbnwwfHx8fDE2NzY5NzM1ODA&ixlib=rb-4.0.3&q=80",
+              "origin": {
+                "id": "U1iYwZ8Dx7k",
+                "url": "https://images.unsplash.com/photo-1557800636-894a64c1696f?crop=entropy&cs=tinysrgb&fm=jpg&ixid=MnwzMzc0NjN8MHwxfHNlYXJjaHw1fHxmcnVpdHxlbnwwfHx8fDE2NzY5NzM1ODA&ixlib=rb-4.0.3&q=80",
+                "width": 3337,
+                "height": 4171
+              },
+              "width": 3337,
+              "height": 4171,
+              "edit": {
+                "background": "transparent",
+                "zoom": 1,
+                "crop": {
+                  "x": 0,
+                  "y": 0
+                }
+              },
+              "alt": "Second Image",
+              "credits": null,
+              "__TYPE__": "ImageContent",
+              "thumbnails": {}
+            }
+          ]
+        ]
+      },
+      {
+        "__TYPE__": "GroupItemContent",
+        "value": [
+          [
+            "image",
+            {
+              "url": "https://images.unsplash.com/photo-1547514701-42782101795e?crop=entropy&cs=tinysrgb&fm=jpg&ixid=MnwzMzc0NjN8MHwxfHNlYXJjaHwxMHx8ZnJ1aXR8ZW58MHx8fHwxNjc2OTczNTgw&ixlib=rb-4.0.3&q=80",
+              "origin": {
+                "id": "nibgG33H0F8",
+                "url": "https://images.unsplash.com/photo-1547514701-42782101795e?crop=entropy&cs=tinysrgb&fm=jpg&ixid=MnwzMzc0NjN8MHwxfHNlYXJjaHwxMHx8ZnJ1aXR8ZW58MHx8fHwxNjc2OTczNTgw&ixlib=rb-4.0.3&q=80",
+                "width": 4000,
+                "height": 6000
+              },
+              "width": 4000,
+              "height": 6000,
+              "edit": {
+                "background": "transparent",
+                "zoom": 1,
+                "crop": {
+                  "x": 0,
+                  "y": 0
+                }
+              },
+              "alt": "Third Image",
+              "credits": null,
+              "__TYPE__": "ImageContent",
+              "thumbnails": {}
+            }
+          ]
+        ]
+      }
+    ]
+  }
+]
