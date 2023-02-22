@@ -5,6 +5,7 @@ export const ImagesGrid = styled.div`
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  align-items: center;
   max-width: 80rem;
   margin: 1.25rem 2rem;
 `;
@@ -12,6 +13,7 @@ export const ImagesGrid = styled.div`
 export const ImageInGrid = styled.img`
   width: 100%;
   padding: 1rem;
+  box-sizing: border-box;
 
   ${mq[0]} {
     width: 50%;

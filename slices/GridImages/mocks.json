@@ -123,6 +123,68 @@
             }
           ]
         ]
+      },
+      {
+        "__TYPE__": "GroupItemContent",
+        "value": [
+          [
+            "image",
+            {
+              "url": "https://images.unsplash.com/photo-1421494756418-72f0f89c6bfd?crop=entropy&cs=tinysrgb&fm=jpg&ixid=MnwzMzc0NjN8MHwxfHNlYXJjaHwyOXx8ZnJ1aXR8ZW58MHx8fHwxNjc3MDYxMTk1&ixlib=rb-4.0.3&q=80",
+              "origin": {
+                "id": "GoKXJaQoLQs",
+                "url": "https://images.unsplash.com/photo-1421494756418-72f0f89c6bfd?crop=entropy&cs=tinysrgb&fm=jpg&ixid=MnwzMzc0NjN8MHwxfHNlYXJjaHwyOXx8ZnJ1aXR8ZW58MHx8fHwxNjc3MDYxMTk1&ixlib=rb-4.0.3&q=80",
+                "width": 1800,
+                "height": 2700
+              },
+              "width": 1800,
+              "height": 2700,
+              "edit": {
+                "background": "transparent",
+                "zoom": 1,
+                "crop": {
+                  "x": 0,
+                  "y": 0
+                }
+              },
+              "credits": null,
+              "alt": null,
+              "__TYPE__": "ImageContent",
+              "thumbnails": {}
+            }
+          ]
+        ]
+      },
+      {
+        "__TYPE__": "GroupItemContent",
+        "value": [
+          [
+            "image",
+            {
+              "url": "https://images.unsplash.com/photo-1619566636858-adf3ef46400b?crop=entropy&cs=tinysrgb&fm=jpg&ixid=MnwzMzc0NjN8MHwxfHNlYXJjaHw0fHxmcnVpdHxlbnwwfHx8fDE2NzcwNjExOTU&ixlib=rb-4.0.3&q=80",
+              "origin": {
+                "id": "5JQH9Iqnm9o",
+                "url": "https://images.unsplash.com/photo-1619566636858-adf3ef46400b?crop=entropy&cs=tinysrgb&fm=jpg&ixid=MnwzMzc0NjN8MHwxfHNlYXJjaHw0fHxmcnVpdHxlbnwwfHx8fDE2NzcwNjExOTU&ixlib=rb-4.0.3&q=80",
+                "width": 4608,
+                "height": 3072
+              },
+              "width": 4608,
+              "height": 3072,
+              "edit": {
+                "background": "transparent",
+                "zoom": 1,
+                "crop": {
+                  "x": 0,
+                  "y": 0
+                }
+              },
+              "credits": null,
+              "alt": null,
+              "__TYPE__": "ImageContent",
+              "thumbnails": {}
+            }
+          ]
+        ]
       }
     ]
   }
