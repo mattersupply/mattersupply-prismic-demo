@@ -3,6 +3,7 @@
     "first_demo_module": {}
   },
   "slices": {
-    "GridImages": {}
+    "GridImages": {},
+    "Hero": {}
   }
 }

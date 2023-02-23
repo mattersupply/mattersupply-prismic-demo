@@ -3,13 +3,13 @@
     "__TYPE__": "ImageContent",
     "origin": {
       "id": "main",
-      "url": "https://images.unsplash.com/photo-1571126770897-2d612d1f7b89",
-      "width": 3456,
-      "height": 3456
+      "url": "https://images.unsplash.com/photo-1499951360447-b19be8fe80f5",
+      "width": 5848,
+      "height": 3899
     },
-    "url": "https://images.unsplash.com/photo-1571126770897-2d612d1f7b89",
-    "width": 3456,
-    "height": 3456,
+    "url": "https://images.unsplash.com/photo-1499951360447-b19be8fe80f5",
+    "width": 5848,
+    "height": 3899,
     "edit": {
       "zoom": 1,
       "crop": {
@@ -22,7 +22,7 @@
   },
   "demo_title": {
     "__TYPE__": "FieldContent",
-    "value": "share",
+    "value": "manufacturing",
     "type": "Text"
   },
   "demo_description": {
@@ -31,7 +31,7 @@
       {
         "type": "paragraph",
         "content": {
-          "text": "Veniam laboris sit minim sint nisi incididunt sint elit cupidatat excepteur anim ut adipisicing magna. Et voluptate ullamco in sunt voluptate tempor incididunt laborum laboris."
+          "text": "Culpa cupidatat veniam fugiat exercitation cupidatat velit nulla adipisicing laboris ullamco."
         }
       }
     ]
@@ -40,7 +40,7 @@
     "__TYPE__": "SliceContentType",
     "value": [
       {
-        "key": "grid_images$dcc4683c-6a6b-454c-b99c-a50a3f5581c6",
+        "key": "grid_images$843bb268-cb98-4199-a64e-e967ceb8b5ad",
         "name": "grid_images",
         "widget": {
           "__TYPE__": "SharedSliceContent",
@@ -52,7 +52,7 @@
                 {
                   "type": "heading1",
                   "content": {
-                    "text": "Street"
+                    "text": "Press"
                   }
                 }
               ]
@@ -63,7 +63,7 @@
                 {
                   "type": "paragraph",
                   "content": {
-                    "text": "Incididunt ipsum incididunt enim ea incididunt sint anim pariatur officia sunt voluptate. Commodo duis proident eu veniam Lorem. Aliqua aute laborum ipsum velit commodo aliquip deserunt consectetur nostrud."
+                    "text": "Aliqua reprehenderit veniam cillum et ex eu occaecat occaecat eiusmod eiusmod."
                   }
                 }
               ]
@@ -79,13 +79,13 @@
                     "__TYPE__": "ImageContent",
                     "origin": {
                       "id": "main",
-                      "url": "https://images.unsplash.com/photo-1587613865763-4b8b0d19e8ab",
-                      "width": 12288,
-                      "height": 16384
+                      "url": "https://images.unsplash.com/photo-1606248897732-2c5ffe759c04",
+                      "width": 4000,
+                      "height": 4000
                     },
-                    "url": "https://images.unsplash.com/photo-1587613865763-4b8b0d19e8ab",
-                    "width": 12288,
-                    "height": 16384,
+                    "url": "https://images.unsplash.com/photo-1606248897732-2c5ffe759c04",
+                    "width": 4000,
+                    "height": 4000,
                     "edit": {
                       "zoom": 1,
                       "crop": {
@@ -98,6 +98,65 @@
                   }
                 ]
               ]
+            }
+          ]
+        }
+      },
+      {
+        "key": "hero$dc3ac80a-4425-48cf-8baa-0d99924a3afd",
+        "name": "hero",
+        "widget": {
+          "__TYPE__": "SharedSliceContent",
+          "variation": "default",
+          "primary": {
+            "title": {
+              "__TYPE__": "StructuredTextContent",
+              "value": [
+                {
+                  "type": "heading1",
+                  "content": {
+                    "text": "Adjective"
+                  }
+                }
+              ]
+            },
+            "description": {
+              "__TYPE__": "StructuredTextContent",
+              "value": [
+                {
+                  "type": "paragraph",
+                  "content": {
+                    "text": "Tempor eu culpa dolor minim commodo consectetur elit. Labore aute elit minim nostrud nisi ut duis consequat ex mollit adipisicing."
+                  }
+                }
+              ]
+            },
+            "image": {
+              "__TYPE__": "ImageContent",
+              "origin": {
+                "id": "main",
+                "url": "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d",
+                "width": 4076,
+                "height": 2712
+              },
+              "url": "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d",
+              "width": 4076,
+              "height": 2712,
+              "edit": {
+                "zoom": 1,
+                "crop": {
+                  "x": 0,
+                  "y": 0
+                },
+                "background": "transparent"
+              },
+              "thumbnails": {}
+            }
+          },
+          "items": [
+            {
+              "__TYPE__": "GroupItemContent",
+              "value": []
             }
           ]
         }

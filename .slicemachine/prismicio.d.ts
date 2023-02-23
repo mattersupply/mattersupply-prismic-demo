@@ -57,7 +57,7 @@ interface FirstDemoModuleDocumentData {
  * Slice for *First Demo Module → Slice Zone*
  *
  */
-type FirstDemoModuleDocumentDataSlicesSlice = GridImagesSlice;
+type FirstDemoModuleDocumentDataSlicesSlice = GridImagesSlice | HeroSlice;
 /**
  * First Demo Module document from Prismic
  *
@@ -134,11 +134,70 @@ type GridImagesSliceVariation = GridImagesSliceDefault;
  *
  */
 export type GridImagesSlice = prismicT.SharedSlice<"grid_images", GridImagesSliceVariation>;
+/**
+ * Primary content in Hero → Primary
+ *
+ */
+interface HeroSliceDefaultPrimary {
+    /**
+     * Title field in *Hero → Primary*
+     *
+     * - **Field Type**: Title
+     * - **Placeholder**: This is where it all begins...
+     * - **API ID Path**: hero.primary.title
+     * - **Documentation**: https://prismic.io/docs/core-concepts/rich-text-title
+     *
+     */
+    title: prismicT.TitleField;
+    /**
+     * Description field in *Hero → Primary*
+     *
+     * - **Field Type**: Rich Text
+     * - **Placeholder**: A nice description of your feature
+     * - **API ID Path**: hero.primary.description
+     * - **Documentation**: https://prismic.io/docs/core-concepts/rich-text-title
+     *
+     */
+    description: prismicT.RichTextField;
+    /**
+     * Image field in *Hero → Primary*
+     *
+     * - **Field Type**: Image
+     * - **Placeholder**: *None*
+     * - **API ID Path**: hero.primary.image
+     * - **Documentation**: https://prismic.io/docs/core-concepts/image
+     *
+     */
+    image: prismicT.ImageField<never>;
+}
+/**
+ * Default variation for Hero Slice
+ *
+ * - **API ID**: `default`
+ * - **Description**: `Hero`
+ * - **Documentation**: https://prismic.io/docs/core-concepts/reusing-slices
+ *
+ */
+export type HeroSliceDefault = prismicT.SharedSliceVariation<"default", Simplify<HeroSliceDefaultPrimary>, never>;
+/**
+ * Slice variation for *Hero*
+ *
+ */
+type HeroSliceVariation = HeroSliceDefault;
+/**
+ * Hero Shared Slice
+ *
+ * - **API ID**: `hero`
+ * - **Description**: `Hero`
+ * - **Documentation**: https://prismic.io/docs/core-concepts/reusing-slices
+ *
+ */
+export type HeroSlice = prismicT.SharedSlice<"hero", HeroSliceVariation>;
 declare module "@prismicio/client" {
     interface CreateClient {
         (repositoryNameOrEndpoint: string, options?: prismic.ClientConfig): prismic.Client<AllDocumentTypes>;
     }
     namespace Content {
-        export type { FirstDemoModuleDocumentData, FirstDemoModuleDocumentDataSlicesSlice, FirstDemoModuleDocument, AllDocumentTypes, GridImagesSliceDefaultPrimary, GridImagesSliceDefaultItem, GridImagesSliceDefault, GridImagesSliceVariation, GridImagesSlice };
+        export type { FirstDemoModuleDocumentData, FirstDemoModuleDocumentDataSlicesSlice, FirstDemoModuleDocument, AllDocumentTypes, GridImagesSliceDefaultPrimary, GridImagesSliceDefaultItem, GridImagesSliceDefault, GridImagesSliceVariation, GridImagesSlice, HeroSliceDefaultPrimary, HeroSliceDefault, HeroSliceVariation, HeroSlice };
     }
 }

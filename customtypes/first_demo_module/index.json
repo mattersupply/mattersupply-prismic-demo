@@ -36,6 +36,9 @@
           "choices": {
             "grid_images": {
               "type": "SharedSlice"
+            },
+            "hero": {
+              "type": "SharedSlice"
             }
           }
         }

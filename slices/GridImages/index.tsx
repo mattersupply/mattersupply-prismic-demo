@@ -29,13 +29,9 @@ const GridImages = (gridImagesProperties: GridImagesProperties) => {
         <PrismicRichText field={slice?.primary?.description} />
       </Description>
       <ImagesGrid>
-        {slice?.items?.map((item, i) => (
-          <ImageInGrid
-            key={`rendered-image-${i}`}
-            src={item.image.url}
-            alt={item.image.alt}
-          />
-        ))}
+        {slice?.items?.map((item, i) => {
+          return <ImageInGrid key={i} field={item?.image} />;
+        })}
       </ImagesGrid>
     </Section>
   );
