@@ -2,7 +2,7 @@ import styled from "@emotion/styled";
 import { mq } from "../theme";
 
 export const Section = styled.section<{
-  backgroundImage: string | undefined;
+  backgroundImage?: string | undefined;
 }>`
   ${(props) =>
     props.backgroundImage
