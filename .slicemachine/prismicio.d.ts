@@ -57,7 +57,7 @@ interface FirstDemoModuleDocumentData {
  * Slice for *First Demo Module → Slice Zone*
  *
  */
-type FirstDemoModuleDocumentDataSlicesSlice = GridImagesSlice | HeroSlice;
+type FirstDemoModuleDocumentDataSlicesSlice = GridImagesSlice | HeroSlice | BackgroundedTitleSlice;
 /**
  * First Demo Module document from Prismic
  *
@@ -69,6 +69,55 @@ type FirstDemoModuleDocumentDataSlicesSlice = GridImagesSlice | HeroSlice;
  */
 export type FirstDemoModuleDocument<Lang extends string = string> = prismicT.PrismicDocumentWithoutUID<Simplify<FirstDemoModuleDocumentData>, "first_demo_module", Lang>;
 export type AllDocumentTypes = FirstDemoModuleDocument;
+/**
+ * Primary content in BackgroundedTitle → Primary
+ *
+ */
+interface BackgroundedTitleSliceDefaultPrimary {
+    /**
+     * Background Image field in *BackgroundedTitle → Primary*
+     *
+     * - **Field Type**: Image
+     * - **Placeholder**: *None*
+     * - **API ID Path**: backgrounded_title.primary.background_image
+     * - **Documentation**: https://prismic.io/docs/core-concepts/image
+     *
+     */
+    background_image: prismicT.ImageField<never>;
+    /**
+     * Title field in *BackgroundedTitle → Primary*
+     *
+     * - **Field Type**: Title
+     * - **Placeholder**: This is where it all begins...
+     * - **API ID Path**: backgrounded_title.primary.title
+     * - **Documentation**: https://prismic.io/docs/core-concepts/rich-text-title
+     *
+     */
+    title: prismicT.TitleField;
+}
+/**
+ * Default variation for BackgroundedTitle Slice
+ *
+ * - **API ID**: `default`
+ * - **Description**: `BackgroundedTitle`
+ * - **Documentation**: https://prismic.io/docs/core-concepts/reusing-slices
+ *
+ */
+export type BackgroundedTitleSliceDefault = prismicT.SharedSliceVariation<"default", Simplify<BackgroundedTitleSliceDefaultPrimary>, never>;
+/**
+ * Slice variation for *BackgroundedTitle*
+ *
+ */
+type BackgroundedTitleSliceVariation = BackgroundedTitleSliceDefault;
+/**
+ * BackgroundedTitle Shared Slice
+ *
+ * - **API ID**: `backgrounded_title`
+ * - **Description**: `BackgroundedTitle`
+ * - **Documentation**: https://prismic.io/docs/core-concepts/reusing-slices
+ *
+ */
+export type BackgroundedTitleSlice = prismicT.SharedSlice<"backgrounded_title", BackgroundedTitleSliceVariation>;
 /**
  * Primary content in GridImages → Primary
  *
@@ -198,6 +247,6 @@ declare module "@prismicio/client" {
         (repositoryNameOrEndpoint: string, options?: prismic.ClientConfig): prismic.Client<AllDocumentTypes>;
     }
     namespace Content {
-        export type { FirstDemoModuleDocumentData, FirstDemoModuleDocumentDataSlicesSlice, FirstDemoModuleDocument, AllDocumentTypes, GridImagesSliceDefaultPrimary, GridImagesSliceDefaultItem, GridImagesSliceDefault, GridImagesSliceVariation, GridImagesSlice, HeroSliceDefaultPrimary, HeroSliceDefault, HeroSliceVariation, HeroSlice };
+        export type { FirstDemoModuleDocumentData, FirstDemoModuleDocumentDataSlicesSlice, FirstDemoModuleDocument, AllDocumentTypes, BackgroundedTitleSliceDefaultPrimary, BackgroundedTitleSliceDefault, BackgroundedTitleSliceVariation, BackgroundedTitleSlice, GridImagesSliceDefaultPrimary, GridImagesSliceDefaultItem, GridImagesSliceDefault, GridImagesSliceVariation, GridImagesSlice, HeroSliceDefaultPrimary, HeroSliceDefault, HeroSliceVariation, HeroSlice };
     }
 }

@@ -39,6 +39,9 @@
             },
             "hero": {
               "type": "SharedSlice"
+            },
+            "backgrounded_title": {
+              "type": "SharedSlice"
             }
           }
         }

@@ -4,6 +4,11 @@
   },
   "slices": {
     "GridImages": {},
-    "Hero": {}
+    "Hero": {},
+    "BackgroundedTitle": {
+      "default": {
+        "primary": {}
+      }
+    }
   }
 }

@@ -3,13 +3,13 @@
     "__TYPE__": "ImageContent",
     "origin": {
       "id": "main",
-      "url": "https://images.unsplash.com/photo-1499951360447-b19be8fe80f5",
-      "width": 5848,
-      "height": 3899
+      "url": "https://images.unsplash.com/photo-1587613865763-4b8b0d19e8ab",
+      "width": 12288,
+      "height": 16384
     },
-    "url": "https://images.unsplash.com/photo-1499951360447-b19be8fe80f5",
-    "width": 5848,
-    "height": 3899,
+    "url": "https://images.unsplash.com/photo-1587613865763-4b8b0d19e8ab",
+    "width": 12288,
+    "height": 16384,
     "edit": {
       "zoom": 1,
       "crop": {
@@ -22,7 +22,7 @@
   },
   "demo_title": {
     "__TYPE__": "FieldContent",
-    "value": "manufacturing",
+    "value": "is",
     "type": "Text"
   },
   "demo_description": {
@@ -31,7 +31,7 @@
       {
         "type": "paragraph",
         "content": {
-          "text": "Culpa cupidatat veniam fugiat exercitation cupidatat velit nulla adipisicing laboris ullamco."
+          "text": "Ea consectetur amet sint nisi ad sit cupidatat enim Lorem qui. Eiusmod amet ullamco eu sint eiusmod aliquip minim mollit sunt. Tempor est dolor do enim anim pariatur laboris ullamco veniam cillum quis quis sunt."
         }
       }
     ]
@@ -40,7 +40,7 @@
     "__TYPE__": "SliceContentType",
     "value": [
       {
-        "key": "grid_images$843bb268-cb98-4199-a64e-e967ceb8b5ad",
+        "key": "grid_images$a87e747e-e2ac-4cff-ab84-e7a9efced293",
         "name": "grid_images",
         "widget": {
           "__TYPE__": "SharedSliceContent",
@@ -52,7 +52,7 @@
                 {
                   "type": "heading1",
                   "content": {
-                    "text": "Press"
+                    "text": "Plant"
                   }
                 }
               ]
@@ -63,7 +63,7 @@
                 {
                   "type": "paragraph",
                   "content": {
-                    "text": "Aliqua reprehenderit veniam cillum et ex eu occaecat occaecat eiusmod eiusmod."
+                    "text": "Fugiat et exercitation labore qui fugiat dolore id voluptate ad sit enim. Ut amet id do cupidatat sit reprehenderit nulla sit sunt ipsum aute ad."
                   }
                 }
               ]
@@ -79,13 +79,13 @@
                     "__TYPE__": "ImageContent",
                     "origin": {
                       "id": "main",
-                      "url": "https://images.unsplash.com/photo-1606248897732-2c5ffe759c04",
-                      "width": 4000,
-                      "height": 4000
+                      "url": "https://images.unsplash.com/photo-1494173853739-c21f58b16055",
+                      "width": 3277,
+                      "height": 4092
                     },
-                    "url": "https://images.unsplash.com/photo-1606248897732-2c5ffe759c04",
-                    "width": 4000,
-                    "height": 4000,
+                    "url": "https://images.unsplash.com/photo-1494173853739-c21f58b16055",
+                    "width": 3277,
+                    "height": 4092,
                     "edit": {
                       "zoom": 1,
                       "crop": {
@@ -103,7 +103,7 @@
         }
       },
       {
-        "key": "hero$dc3ac80a-4425-48cf-8baa-0d99924a3afd",
+        "key": "hero$4a59fe93-67e3-4969-a1d9-c53098fe142b",
         "name": "hero",
         "widget": {
           "__TYPE__": "SharedSliceContent",
@@ -115,7 +115,7 @@
                 {
                   "type": "heading1",
                   "content": {
-                    "text": "Adjective"
+                    "text": "Helpful"
                   }
                 }
               ]
@@ -126,7 +126,7 @@
                 {
                   "type": "paragraph",
                   "content": {
-                    "text": "Tempor eu culpa dolor minim commodo consectetur elit. Labore aute elit minim nostrud nisi ut duis consequat ex mollit adipisicing."
+                    "text": "Consequat mollit officia nisi non. Voluptate quis incididunt proident pariatur ut occaecat. Labore dolore excepteur quis est culpa excepteur aliqua deserunt mollit reprehenderit non nisi magna dolore consectetur."
                   }
                 }
               ]
@@ -135,13 +135,13 @@
               "__TYPE__": "ImageContent",
               "origin": {
                 "id": "main",
-                "url": "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d",
-                "width": 4076,
-                "height": 2712
+                "url": "https://images.unsplash.com/photo-1589321578146-4c1ba445cc88",
+                "width": 3168,
+                "height": 4752
               },
-              "url": "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d",
-              "width": 4076,
-              "height": 2712,
+              "url": "https://images.unsplash.com/photo-1589321578146-4c1ba445cc88",
+              "width": 3168,
+              "height": 4752,
               "edit": {
                 "zoom": 1,
                 "crop": {
@@ -151,6 +151,54 @@
                 "background": "transparent"
               },
               "thumbnails": {}
+            }
+          },
+          "items": [
+            {
+              "__TYPE__": "GroupItemContent",
+              "value": []
+            }
+          ]
+        }
+      },
+      {
+        "key": "backgrounded_title$44a5e142-d8a0-41b6-8966-f508d0ef2605",
+        "name": "backgrounded_title",
+        "widget": {
+          "__TYPE__": "SharedSliceContent",
+          "variation": "default",
+          "primary": {
+            "background_image": {
+              "__TYPE__": "ImageContent",
+              "origin": {
+                "id": "main",
+                "url": "https://images.unsplash.com/photo-1504198070170-4ca53bb1c1fa",
+                "width": 2747,
+                "height": 4120
+              },
+              "url": "https://images.unsplash.com/photo-1504198070170-4ca53bb1c1fa",
+              "width": 2747,
+              "height": 4120,
+              "edit": {
+                "zoom": 1,
+                "crop": {
+                  "x": 0,
+                  "y": 0
+                },
+                "background": "transparent"
+              },
+              "thumbnails": {}
+            },
+            "title": {
+              "__TYPE__": "StructuredTextContent",
+              "value": [
+                {
+                  "type": "heading1",
+                  "content": {
+                    "text": "Alike"
+                  }
+                }
+              ]
             }
           },
           "items": [
