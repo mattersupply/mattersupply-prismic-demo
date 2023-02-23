@@ -9,6 +9,11 @@
       "default": {
         "primary": {}
       }
+    },
+    "Review": {
+      "default": {
+        "items": {}
+      }
     }
   }
 }

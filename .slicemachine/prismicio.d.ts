@@ -242,11 +242,70 @@ type HeroSliceVariation = HeroSliceDefault;
  *
  */
 export type HeroSlice = prismicT.SharedSlice<"hero", HeroSliceVariation>;
+/**
+ * Primary content in Review → Primary
+ *
+ */
+interface ReviewSliceDefaultPrimary {
+    /**
+     * Title field in *Review → Primary*
+     *
+     * - **Field Type**: Title
+     * - **Placeholder**: This is where it all begins...
+     * - **API ID Path**: review.primary.title
+     * - **Documentation**: https://prismic.io/docs/core-concepts/rich-text-title
+     *
+     */
+    title: prismicT.TitleField;
+    /**
+     * Description field in *Review → Primary*
+     *
+     * - **Field Type**: Rich Text
+     * - **Placeholder**: A nice description of your feature
+     * - **API ID Path**: review.primary.description
+     * - **Documentation**: https://prismic.io/docs/core-concepts/rich-text-title
+     *
+     */
+    description: prismicT.RichTextField;
+    /**
+     * rating field in *Review → Primary*
+     *
+     * - **Field Type**: Number
+     * - **Placeholder**: *None*
+     * - **API ID Path**: review.primary.rating
+     * - **Documentation**: https://prismic.io/docs/core-concepts/number
+     *
+     */
+    rating: prismicT.NumberField;
+}
+/**
+ * Default variation for Review Slice
+ *
+ * - **API ID**: `default`
+ * - **Description**: `Review`
+ * - **Documentation**: https://prismic.io/docs/core-concepts/reusing-slices
+ *
+ */
+export type ReviewSliceDefault = prismicT.SharedSliceVariation<"default", Simplify<ReviewSliceDefaultPrimary>, never>;
+/**
+ * Slice variation for *Review*
+ *
+ */
+type ReviewSliceVariation = ReviewSliceDefault;
+/**
+ * Review Shared Slice
+ *
+ * - **API ID**: `review`
+ * - **Description**: `Review`
+ * - **Documentation**: https://prismic.io/docs/core-concepts/reusing-slices
+ *
+ */
+export type ReviewSlice = prismicT.SharedSlice<"review", ReviewSliceVariation>;
 declare module "@prismicio/client" {
     interface CreateClient {
         (repositoryNameOrEndpoint: string, options?: prismic.ClientConfig): prismic.Client<AllDocumentTypes>;
     }
     namespace Content {
-        export type { FirstDemoModuleDocumentData, FirstDemoModuleDocumentDataSlicesSlice, FirstDemoModuleDocument, AllDocumentTypes, BackgroundedTitleSliceDefaultPrimary, BackgroundedTitleSliceDefault, BackgroundedTitleSliceVariation, BackgroundedTitleSlice, GridImagesSliceDefaultPrimary, GridImagesSliceDefaultItem, GridImagesSliceDefault, GridImagesSliceVariation, GridImagesSlice, HeroSliceDefaultPrimary, HeroSliceDefault, HeroSliceVariation, HeroSlice };
+        export type { FirstDemoModuleDocumentData, FirstDemoModuleDocumentDataSlicesSlice, FirstDemoModuleDocument, AllDocumentTypes, BackgroundedTitleSliceDefaultPrimary, BackgroundedTitleSliceDefault, BackgroundedTitleSliceVariation, BackgroundedTitleSlice, GridImagesSliceDefaultPrimary, GridImagesSliceDefaultItem, GridImagesSliceDefault, GridImagesSliceVariation, GridImagesSlice, HeroSliceDefaultPrimary, HeroSliceDefault, HeroSliceVariation, HeroSlice, ReviewSliceDefaultPrimary, ReviewSliceDefault, ReviewSliceVariation, ReviewSlice };
     }
 }

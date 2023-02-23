@@ -4,3 +4,4 @@ export * from "@/styled/components/Description";
 export * from "@/styled/components/Section";
 export * from "@/styled/components/ImagesGrid";
 export * from "@/styled/components/Centered";
+export * from "@/styled/components/StarRating";

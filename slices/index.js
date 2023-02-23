@@ -3,15 +3,18 @@
 import BackgroundedTitle from './BackgroundedTitle';
 import GridImages from './GridImages';
 import Hero from './Hero';
+import Review from './Review';
 
 export {
 	BackgroundedTitle,
 	GridImages,
 	Hero,
+	Review,
 };
 
 export const components = {
 	backgrounded_title: BackgroundedTitle,
 	grid_images: GridImages,
 	hero: Hero,
+	review: Review,
 };

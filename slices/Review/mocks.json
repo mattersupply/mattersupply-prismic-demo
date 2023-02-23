@@ -1,0 +1,41 @@
+[
+  {
+    "__TYPE__": "SharedSliceContent",
+    "variation": "default",
+    "primary": {
+      "title": {
+        "__TYPE__": "StructuredTextContent",
+        "value": [
+          {
+            "type": "heading1",
+            "content": {
+              "text": "Running"
+            }
+          }
+        ]
+      },
+      "description": {
+        "__TYPE__": "StructuredTextContent",
+        "value": [
+          {
+            "type": "paragraph",
+            "content": {
+              "text": "Officia minim cupidatat proident ullamco sunt laboris. Eiusmod laborum deserunt officia est cillum. Aute sit excepteur Lorem veniam reprehenderit nisi eu officia."
+            }
+          }
+        ]
+      },
+      "rating": {
+        "__TYPE__": "FieldContent",
+        "value": "10",
+        "type": "Number"
+      }
+    },
+    "items": [
+      {
+        "__TYPE__": "GroupItemContent",
+        "value": []
+      }
+    ]
+  }
+]
