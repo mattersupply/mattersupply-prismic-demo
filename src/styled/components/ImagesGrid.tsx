@@ -1,6 +1,5 @@
-import React from "react";
 import styled from "@emotion/styled";
-import { mq } from "./theme";
+import { mq } from "../theme";
 import { PrismicNextImage } from "@prismicio/next";
 
 export const ImagesGrid = styled.div`
@@ -8,14 +7,12 @@ export const ImagesGrid = styled.div`
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  max-width: 80rem;
   margin: 1.25rem 2rem;
 `;
 
-export const ImageInGrid = styled((props: any) => (
-  <PrismicNextImage {...props} />
-))`
+export const ImageInGrid = styled(PrismicNextImage)`
   width: 100%;
+  height: auto;
   padding: 1rem;
   box-sizing: border-box;
 

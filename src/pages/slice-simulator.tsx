@@ -1,3 +1,4 @@
+import React from "react";
 import { SliceSimulator } from "@prismicio/slice-simulator-react";
 import { SliceZone } from "@prismicio/react";
 

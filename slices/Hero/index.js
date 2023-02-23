@@ -1,43 +1,47 @@
 import React from "react";
 import { PrismicRichText } from "@prismicio/react";
 import { PrismicNextImage } from "@prismicio/next";
-import { Description, Title } from "@/styled";
+
+import { Centered, Description, Section, Title } from "@/styled";
+import styled from "@emotion/styled";
+
+import { richTextComponents } from "@/utils/rich-text";
+
+const Image = styled(PrismicNextImage)`
+  box-sizing: border-box;
+  max-width: 100%;
+  height: auto;
+`;
 
 /**
  * @typedef {import("@prismicio/client").Content.HeroSlice} HeroSlice
  * @typedef {import("@prismicio/react").SliceComponentProps<HeroSlice>} HeroProps
  * @param { HeroProps }
  */
-const Hero = ({ slice }) => {
+export default function Hero({ slice }) {
   return (
-    <section>
-      <Title className="title">
-        {slice.primary.title ? (
-          <PrismicRichText field={slice.primary.title} />
-        ) : (
-          <h2>Template slice, update me!</h2>
-        )}
-      </Title>
-      <PrismicNextImage field={slice.primary.image} />
-      {slice.primary.description ? (
-        <Description>
-          <PrismicRichText field={slice.primary.description} />
-        </Description>
+    <Section>
+      {slice.primary.title ? (
+        <PrismicRichText
+          field={slice.primary.title}
+          components={richTextComponents}
+        />
       ) : (
-        <p>start by editing this slice from inside Slice Machine!</p>
+        <Title>Template slice, update me!</Title>
       )}
-      <style jsx>{`
-        section {
-          max-width: 600px;
-          margin: 4em auto;
-          text-align: center;
-        }
-        .title {
-          color: #8592e0;
-        }
-      `}</style>
-    </section>
+      <Centered>
+        <Image field={slice.primary.image} />
+      </Centered>
+      {slice.primary.description ? (
+        <PrismicRichText
+          field={slice.primary.description}
+          components={richTextComponents}
+        />
+      ) : (
+        <Description>
+          start by editing this slice from inside Slice Machine!
+        </Description>
+      )}
+    </Section>
   );
-};
-
-export default Hero;
+}

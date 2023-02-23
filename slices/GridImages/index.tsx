@@ -2,6 +2,7 @@ import React from "react";
 import { PrismicRichText } from "@prismicio/react";
 import { RTNode } from "@prismicio/types";
 import { Title, Description, Section, ImagesGrid, ImageInGrid } from "@/styled";
+import { richTextComponents } from "@/utils/rich-text";
 
 interface GridImagesProperties {
   slice?: {
@@ -18,16 +19,19 @@ interface GridImagesProperties {
  * @typedef {import("@prismicio/react").SliceComponentProps<GridImagesSlice>} GridImagesProps
  * @param { GridImagesProps }
  */
-const GridImages = (gridImagesProperties: GridImagesProperties) => {
+export default function GridImages(gridImagesProperties: GridImagesProperties) {
   const { slice } = gridImagesProperties;
+
   return (
     <Section>
-      <Title>
-        <PrismicRichText field={slice?.primary?.title} />
-      </Title>
-      <Description>
-        <PrismicRichText field={slice?.primary?.description} />
-      </Description>
+      <PrismicRichText
+        field={slice?.primary?.title}
+        components={richTextComponents}
+      />
+      <PrismicRichText
+        field={slice?.primary?.description}
+        components={richTextComponents}
+      />
       <ImagesGrid>
         {slice?.items?.map((item, i) => {
           return <ImageInGrid key={i} field={item?.image} />;
@@ -35,6 +39,4 @@ const GridImages = (gridImagesProperties: GridImagesProperties) => {
       </ImagesGrid>
     </Section>
   );
-};
-
-export default GridImages;
+}

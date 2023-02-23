@@ -26,24 +26,26 @@
         ]
       },
       "image": {
-        "__TYPE__": "ImageContent",
         "origin": {
-          "id": "main",
-          "url": "https://images.unsplash.com/photo-1587613865763-4b8b0d19e8ab",
-          "width": 12288,
-          "height": 16384
+          "id": "lZ8onQ1wuY8",
+          "url": "https://images.unsplash.com/photo-1528821128474-27f963b062bf?crop=entropy&cs=tinysrgb&fm=jpg&ixid=MnwzMzc0NjN8MHwxfHNlYXJjaHwxMXx8ZnJ1aXR8ZW58MHx8fHwxNjc3MTUzMjA0&ixlib=rb-4.0.3&q=80",
+          "width": 5170,
+          "height": 3447
         },
-        "url": "https://images.unsplash.com/photo-1587613865763-4b8b0d19e8ab",
-        "width": 12288,
-        "height": 16384,
+        "url": "https://images.unsplash.com/photo-1528821128474-27f963b062bf?crop=entropy&cs=tinysrgb&fm=jpg&ixid=MnwzMzc0NjN8MHwxfHNlYXJjaHwxMXx8ZnJ1aXR8ZW58MHx8fHwxNjc3MTUzMjA0&ixlib=rb-4.0.3&q=80",
+        "width": 5170,
+        "height": 3447,
         "edit": {
+          "background": "transparent",
           "zoom": 1,
           "crop": {
             "x": 0,
             "y": 0
-          },
-          "background": "transparent"
+          }
         },
+        "credits": null,
+        "alt": "Person in a laptop",
+        "__TYPE__": "ImageContent",
         "thumbnails": {}
       }
     },

@@ -1,3 +1,4 @@
+import React from "react";
 import Link from "next/link";
 import { PrismicProvider } from "@prismicio/react";
 import { PrismicPreview } from "@prismicio/next";
@@ -10,7 +11,6 @@ interface AppProperties {
 
 export default function App(props: AppProperties) {
   const { Component, pageProps } = props;
-  console.log("aca primero");
 
   return (
     <PrismicProvider internalLinkComponent={(props) => <Link {...props} />}>
